@@ -1,7 +1,8 @@
 /* eslint-disable prettier/prettier */
-import { SocioEntity } from "src/socio/socio.entity/socio.entity";
-import { Column, JoinTable, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
+import { SocioEntity } from "../../socio/socio.entity/socio.entity";
+import { Column, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
 
+@Entity()
 export class ClubEntity {
 
     @PrimaryGeneratedColumn('uuid')
